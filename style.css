@@ -1,0 +1,100 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+}
+
+.container {
+  margin: auto;
+}
+
+.form {
+  text-align: left;
+  display: inline-block;
+  padding: 30px;
+}
+
+.wrap {
+  display: block;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.5em;
+  line-height: 1;
+  color: grey;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__field-wrapper {
+  display: block;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: auto;
+  font-size: 15px;
+  color: #333333;
+}
+
+.form__error {
+  display: inline-block;
+  position: absolute;
+  margin: 10px 0 0 0;
+  color: #df4b41;
+  text-align: left;
+  font-size: 13px;
+}
+
+.form__input {
+  display: inline-block;
+  background: #ffffff;
+  width: 25px;
+  height: 32px;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 7px;
+  margin: 0 2px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #999999;
+}
+.form__input:disabled,
+.form__input:disabled:hover,
+.form__input:disabled:focus {
+  color: black;
+  background: #f0f0f0;
+  border: 1px solid #f0f0f0;
+}
+
+.form__input-wrong-number {
+  border: 1px solid #ff1100;
+  color: #333333;
+}
+
+.form__input:hover {
+  border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.form__input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.48);
+  color: #333333;
+}
+
+.form__input:valid:not(:placeholder-shown) {
+  border-color: 1px solid rgba(0, 0, 0, 0.12);
+  color: #333333;
+}
+
+.form__input:invalid:not(:placeholder-shown) {
+  border: 1px solid #ff1100;
+  color: #333333;
+}
