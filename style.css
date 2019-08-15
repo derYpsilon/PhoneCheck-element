@@ -1,3 +1,5 @@
+/* Стили для страницы, но не для элемента, у вас могут быть любые свои */
+
 html {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,31 +10,24 @@ html {
   margin: auto;
 }
 
+.wrap {
+  display: block;
+  text-align: center;
+}
+
+/* Стиль для формы с полями */
 .form {
   text-align: left;
   display: inline-block;
   padding: 30px;
 }
 
-.wrap {
-  display: block;
-  text-align: center;
-}
-
-.heading {
-  font-size: 1.5em;
-  line-height: 1;
-  color: grey;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: center;
-}
 .form__fieldset {
   border: none;
   margin: 0;
   padding: 0;
 }
-
+/* Стиль для контейнера с input  */
 .form__field-wrapper {
   display: block;
   flex-wrap: nowrap;
@@ -43,7 +38,7 @@ html {
   font-size: 15px;
   color: #333333;
 }
-
+/* Стиль для строки вывода ошибки */
 .form__error {
   display: inline-block;
   position: absolute;
@@ -52,7 +47,7 @@ html {
   text-align: left;
   font-size: 13px;
 }
-
+/* Стиль поля ввода */
 .form__input {
   display: inline-block;
   background: #ffffff;
@@ -67,6 +62,7 @@ html {
   font-size: 15px;
   color: #999999;
 }
+
 .form__input:disabled,
 .form__input:disabled:hover,
 .form__input:disabled:focus {
@@ -74,7 +70,7 @@ html {
   background: #f0f0f0;
   border: 1px solid #f0f0f0;
 }
-
+/* Стиль для поля ввода если номер введен неверно */
 .form__input-wrong-number {
   border: 1px solid #ff1100;
   color: #333333;
